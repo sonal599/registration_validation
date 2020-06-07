@@ -1,0 +1,27 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color:gray;
+       
+}
+
+.container
+{   
+    
+    width: 400px;
+    height: 65%;
+
+    margin-top: 100px;
+    margin-left: 400px;
+    margin-right: 200px;
+    margin-bottom: 300px;
+
+    padding-left: 15%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    background-color: white;
+    
+    border-radius: 10%;
+    
+}

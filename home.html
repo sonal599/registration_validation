@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>FORM</title>
+
+        <link rel="stylesheet" type="text/css"  href="style.css">
+
+         <script>
+             function myfunction()
+              {
+                    var x = document.forms["myForm"]["tex"].value;
+                    if (x == "") 
+                    {
+                        alert("UserName must be filled out");
+                        return false;
+                        document.getElementById('dem').innerHTML="required";
+                    }
+                    var y= document.forms["myForm"]["tex1"].value;
+                    if (y == "") 
+                    {
+                        alert("Password must be filled out");
+                        return false;
+                    }
+                    var z = document.forms["myForm"]["tex2"].value;
+                    if (z == "") 
+                    {
+                        alert(" please confirm password");
+                        return false;
+                    }
+               }
+         </script>
+    </head>
+    <body>
+        <div class="container">
+
+            <h1>Registration Form</h1>
+            <form name="myForm" action="page.html" onsubmit="return myfunction()" method="post">
+                <p>Username</p>
+                <input type="text" name="tex" style="height: 10%; width: 60%;">
+                <p id="dem"></p>
+
+                <p>Password</p>
+                <input type="password" name="tex1" style="height: 10%; width: 60%;">
+         
+                <p>Confirm Password</p>
+                <input type="password" name="tex2" style="height: 10%; width: 60%;">
+                <br>
+                <br>
+
+                    <input type="submit" class="sub" value="Register" style="background-color: blue; 
+                    width: 60%; height: 10%;color: aliceblue; font-size: medium; 
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;" >            
+            </form>
+            
+
+        </div>
+        
+    </body> 
+    
+    
+
+</html>
